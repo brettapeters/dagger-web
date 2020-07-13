@@ -1,0 +1,2 @@
+runtime: java11
+entrypoint: 'java -cp "*" com.example.daggerweb.App'
