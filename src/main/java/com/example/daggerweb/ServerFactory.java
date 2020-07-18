@@ -6,7 +6,7 @@ import dagger.Component;
 
 @Singleton
 @Component(modules = { ServerConfigModule.class })
-public interface ServerFactory {
+interface ServerFactory {
 
   Server server();
 

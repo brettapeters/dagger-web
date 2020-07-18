@@ -1,11 +1,8 @@
 package com.example.daggerweb;
 
-import java.io.IOException;
-
 public class App {
 
-  public static void main(String[] args) throws IOException {
-    System.out.println("hello!!!");
+  public static void main(String[] args) throws Exception {
     Server server = ServerFactory.create().server();
     server.start();
   }

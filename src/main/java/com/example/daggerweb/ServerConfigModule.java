@@ -2,11 +2,15 @@ package com.example.daggerweb;
 
 import com.example.daggerweb.annotations.Port;
 
+import dagger.Binds;
 import dagger.Module;
 import dagger.Provides;
 
 @Module
-public interface ServerConfigModule {
+interface ServerConfigModule {
+
+  @Binds
+  Server jettyServer(JettyServer server);
 
   @Provides
   @Port
